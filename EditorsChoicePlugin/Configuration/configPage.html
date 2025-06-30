@@ -142,25 +142,25 @@
 
                     <div class="inputContainer">
                         <label class="radio-label-block mdl-radio show-focus">
-                            <input type="radio" is="emby-radio" id="FavouritesMode" name="mode" value="FavouritesMode" class="mdl-radio__button"/>
+                            <input type="radio" is="emby-radio" id="FavouritesMode" name="mode" value="FavouritesMode" class="mdl-radio__button" />
                             <div class="mdl-radio__circles"><svg><defs><clipPath id="cutoff"><circle cx="50%" cy="50%" r="50%"></circle></clipPath></defs><circle class="mdl-radio__outer-circle" cx="50%" cy="50%" r="50%" fill="none" stroke="currentcolor" stroke-width="0.26em" clip-path="url(#cutoff)"></circle><circle class="mdl-radio__inner-circle" cx="50%" cy="50%" r="25%" fill="currentcolor"></circle></svg><div class="mdl-radio__focus-circle"></div></div>
                             <span class="radioButtonLabel mdl-radio__label">Favourites</span>
                             <div class="fieldDescription">Shows items from the specified user's favourites</div>
                         </label>
                         <label class="radio-label-block mdl-radio show-focus">
-                            <input type="radio" is="emby-radio" id="RandomMode" name="mode" value="RandomMode" class="mdl-radio__button"/>
+                            <input type="radio" is="emby-radio" id="RandomMode" name="mode" value="RandomMode" class="mdl-radio__button" />
                             <div class="mdl-radio__circles"><svg><defs><clipPath id="cutoff"><circle cx="50%" cy="50%" r="50%"></circle></clipPath></defs><circle class="mdl-radio__outer-circle" cx="50%" cy="50%" r="50%" fill="none" stroke="currentcolor" stroke-width="0.26em" clip-path="url(#cutoff)"></circle><circle class="mdl-radio__inner-circle" cx="50%" cy="50%" r="25%" fill="currentcolor"></circle></svg><div class="mdl-radio__focus-circle"></div></div>
                             <span class="radioButtonLabel mdl-radio__label">Random</span>
                             <div class="fieldDescription">Shows a random selection of items from your library</div>
                         </label>
                         <label class="radio-label-block mdl-radio show-focus">
-                            <input type="radio" is="emby-radio" id="CollectionsMode" name="mode" value="CollectionsMode" class="mdl-radio__button"/>
+                            <input type="radio" is="emby-radio" id="CollectionsMode" name="mode" value="CollectionsMode" class="mdl-radio__button" />
                             <div class="mdl-radio__circles"><svg><defs><clipPath id="cutoff"><circle cx="50%" cy="50%" r="50%"></circle></clipPath></defs><circle class="mdl-radio__outer-circle" cx="50%" cy="50%" r="50%" fill="none" stroke="currentcolor" stroke-width="0.26em" clip-path="url(#cutoff)"></circle><circle class="mdl-radio__inner-circle" cx="50%" cy="50%" r="25%" fill="currentcolor"></circle></svg><div class="mdl-radio__focus-circle"></div></div>
                             <span class="radioButtonLabel mdl-radio__label">Collections</span>
                             <div class="fieldDescription">Shows items from the specified collections</div>
                         </label>
                         <label class="radio-label-block mdl-radio show-focus">
-                            <input type="radio" is="emby-radio" id="NewMode" name="mode" value="NewMode" class="mdl-radio__button"/>
+                            <input type="radio" is="emby-radio" id="NewMode" name="mode" value="NewMode" class="mdl-radio__button" />
                             <div class="mdl-radio__circles"><svg><defs><clipPath id="cutoff"><circle cx="50%" cy="50%" r="50%"></circle></clipPath></defs><circle class="mdl-radio__outer-circle" cx="50%" cy="50%" r="50%" fill="none" stroke="currentcolor" stroke-width="0.26em" clip-path="url(#cutoff)"></circle><circle class="mdl-radio__inner-circle" cx="50%" cy="50%" r="25%" fill="currentcolor"></circle></svg><div class="mdl-radio__focus-circle"></div></div>
                             <span class="radioButtonLabel mdl-radio__label">New</span>
                             <div class="fieldDescription">Shows only items released in the last 6 months</div>
@@ -173,7 +173,7 @@
                             <option value="none">None</option>
                         </select>
                     </div>
-                    
+
                     <div id="NewTimeLimit-container" style="display: none;">
                         <h3 class="selectLabel">Show items released in the last:</h3>
                         <select is="emby-select" id="NewTimeLimitSelect" name="NewTimeLimit" class="emby-select-withcolor emby-select">
@@ -182,7 +182,7 @@
                             <option value="6month">6 months</option>
                             <option value="1year">1 year</option>
                         </select>
-                        <br/>
+                        <br />
                     </div>
 
                     <div id="CollectionsList-container" style="display: none;">
@@ -195,7 +195,7 @@
 
                     <div class="checkboxContainer">
                         <label>
-                            <input is="emby-checkbox"  type="checkbox" id="EnableAutoplay" name="Enable autoplay" label="Enable autoplay">
+                            <input is="emby-checkbox" type="checkbox" id="EnableAutoplay" name="Enable autoplay" label="Enable autoplay">
                             <span>Enable autoplay</span>
                         </label>
                     </div>
@@ -232,21 +232,28 @@
 
                     <div class="checkboxContainer">
                         <label>
-                            <input is="emby-checkbox"  type="checkbox" id="ShowPlayed" name="Show played" label="Show played">
+                            <input is="emby-checkbox" type="checkbox" id="ShowPlayed" name="Show played" label="Show played">
                             <span>Show played items</span>
+                        </label>
+                    </div>
+
+                    <div class="checkboxContainer">
+                        <label>
+                            <input is="emby-checkbox" type="checkbox" id="ShowUnaired" name="Show unaired" label="Show unaired">
+                            <span>Show unaired items</span>
                         </label>
                     </div>
 
                     <h2>Display</h2>
                     <div class="checkboxContainer">
                         <label>
-                            <input is="emby-checkbox"  type="checkbox" id="ShowRating" name="Show rating" label="Show rating">
+                            <input is="emby-checkbox" type="checkbox" id="ShowRating" name="Show rating" label="Show rating">
                             <span>Show community rating</span>
                         </label>
                     </div>
                     <div class="checkboxContainer">
                         <label>
-                            <input is="emby-checkbox"  type="checkbox" id="ShowDesc" name="Show description" label="Show description">
+                            <input is="emby-checkbox" type="checkbox" id="ShowDesc" name="Show description" label="Show description">
                             <span>Show description</span>
                         </label>
                     </div>
@@ -258,13 +265,13 @@
                             <option value="500">Large</option>
                             <option value="600">Huge</option>
                         </select>
-                        <br/>
+                        <br />
                     </div>
 
                     <h2>Technical settings</h2>
                     <div class="checkboxContainer">
                         <label>
-                            <input is="emby-checkbox"  type="checkbox" id="DoScriptInject" name="Enable client script injection" label="Enable client script injection">
+                            <input is="emby-checkbox" type="checkbox" id="DoScriptInject" name="Enable client script injection" label="Enable client script injection">
                             <span>Enable client script injection</span>
                         </label>
                         <div class="fieldDescription">This will depend on permissions for the jellyfin-web index.html file.</div>
@@ -272,7 +279,7 @@
 
                     <div class="checkboxContainer">
                         <label>
-                            <input is="emby-checkbox"  type="checkbox" id="ReduceImageSize" name="Reduce image sizes" label="Reduce image sizes">
+                            <input is="emby-checkbox" type="checkbox" id="ReduceImageSize" name="Reduce image sizes" label="Reduce image sizes">
                             <span>Reduce image sizes.</span>
                         </label>
                         <div class="fieldDescription">This will make banner and logo images load faster for users and reduce network usage, but increase processing demand on your media server. Turn off if plugin is having a significant performance impact.</div>
@@ -318,6 +325,7 @@
                         $('#ReduceImageSize').first().prop('checked', config.ReduceImageSize);
                         $("#BannerHeightSelect").val(config.BannerHeight);
                         $('#ShowPlayed').first().prop('checked', config.ShowPlayed);
+                        $('#ShowUnaired').first().prop('checked', config.ShowUnaired);
                         
                         if (config.Mode == 'FAVOURITES') {
                             $('#EditorUserId-container').show();
@@ -445,6 +453,7 @@
                         config.ShowDescription =  $('#ShowDesc').first().is(':checked');
                         config.ReduceImageSize = $('#ReduceImageSize').first().is(':checked');
                         config.ShowPlayed = $('#ShowPlayed').first().is(':checked');
+                        config.ShowUnaired = $('#ShowUnaired').first().is(':checked');
 
                         if ($('#FavouritesMode').first().is(':checked')) {
                             config.Mode = "FAVOURITES";
